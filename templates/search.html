@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>hive</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Gamanet_Footer_bs5.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top py-3" id="nav">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="{{server}}/"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(255,224,63);"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 28px;">
+                        <g>
+                            <rect fill="none" height="24" width="24"></rect>
+                        </g>
+                        <g>
+                            <g>
+                                <polygon points="13.79,8 15.59,5 13.79,2 10.21,2 8.41,5 10.21,8"></polygon>
+                                <polygon points="10.21,9 8.41,12 10.21,15 13.79,15 15.59,12 13.79,9"></polygon>
+                                <polygon points="16.45,11.51 20.04,11.51 21.83,8.51 20.04,5.51 16.45,5.51 14.65,8.51"></polygon>
+                                <polygon points="20.04,12.51 16.45,12.51 14.65,15.51 16.45,18.51 20.04,18.51 21.83,15.51"></polygon>
+                                <polygon points="7.55,11.51 9.35,8.51 7.55,5.51 3.96,5.51 2.17,8.51 3.96,11.51"></polygon>
+                                <polygon points="7.55,12.51 3.96,12.51 2.17,15.51 3.96,18.51 7.55,18.51 9.35,15.51"></polygon>
+                                <polygon points="10.21,16 8.41,19 10.21,22 13.79,22 15.59,19 13.79,16"></polygon>
+                            </g>
+                        </g>
+                    </svg></span><span>Hive</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><button class="btn bg-white me-3" id="next-queue-button" type="button" style="margin-right: 0px;margin-left: 15px;background: rgb(255,193,7);border-color: rgb(255,193,7);">Next In Queue</button></li>
+                    <li class="nav-item">
+                        <div class="mt-xl-2 px-xl-0"><a href="{{server}}/search"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" id="searchIcon-1" class="ms-xl-2" style="padding-top: 0px;margin-top: 0px;">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                </svg></a></div>
+                    </li>
+                </ul><a id="signinLink" href="{{server}}/login"><button class="btn bg-white me-3" id="nav-signin-button" type="button" style="margin-right: 0px;">Log in</button></a><a id="signupLink" href="{{server}}/signup"><button class="btn btn-warning" id="nav-signup-button" type="button">Sign up</button></a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="d-xl-flex justify-content-xl-center py-xl-4"><input type="search" id="searchInput" style="width: 608px;height: 36px;border: 1px solid rgb(211,211,211);border-radius: 15px;" placeholder="Search" autocomplete="on"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Search</h1>
+                    <div id="search-list-container">
+                        <p class="text-muted">Nothing to find right now.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>History</h1>
+                    <div id="history-list-container">
+                        <p class="text-muted">Nothing to find right now.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Favorites</h1>
+                    <div id="favorites-list-container">
+                        <p class="text-muted">Nothing to find right now.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-xl-flex justify-content-xl-center d-flex align-items-center justify-content-between flex-column flex-sm-row" style="border-width: 0px;">
+        <div class="d-flex align-items-center gap-3"><span class="color-n-7">© 2024 - Hive</span><span class="color-n-5" data-txt-key="txtFooterRights">All rights reserved<br></span></div>
+        <div class="d-flex align-items-center gap-3"></div>
+    </footer>
+    <script type="module" src="assets/js/search.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+
+</html>

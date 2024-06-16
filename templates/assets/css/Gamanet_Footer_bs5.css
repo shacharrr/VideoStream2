@@ -1,0 +1,29 @@
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 0.0625rem solid #D8D6D5;
+  height: 2.5rem;
+  padding: 0 2rem;
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  font-size: 0.75rem;
+  color: #817F7E;
+}
+
+.footer__link {
+  color: #817F7E;
+}
+
+.footer__link:hover {
+  color: #2F2E2D;
+  text-decoration: underline;
+}
+
+.footer__link:active, .footer__link:focus, .footer__link:focus-visible {
+  color: #1A1919;
+  text-decoration: underline;
+}
+

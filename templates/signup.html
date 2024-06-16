@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>hive</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Gamanet_Footer_bs5.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+</head>
+
+<body>
+    <main style="width: 100%;height: 850px;">
+        <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="background: transparent;color: transparent;height: 100%;"><a href="{{server}}/"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon me-xxl-0 mb-5" style="background: rgb(255,224,63);width: 128px;height: 128px;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 28px;width: 112px;height: 112px;">
+                        <g>
+                            <rect fill="none" height="24" width="24"></rect>
+                        </g>
+                        <g>
+                            <g>
+                                <polygon points="13.79,8 15.59,5 13.79,2 10.21,2 8.41,5 10.21,8"></polygon>
+                                <polygon points="10.21,9 8.41,12 10.21,15 13.79,15 15.59,12 13.79,9"></polygon>
+                                <polygon points="16.45,11.51 20.04,11.51 21.83,8.51 20.04,5.51 16.45,5.51 14.65,8.51"></polygon>
+                                <polygon points="20.04,12.51 16.45,12.51 14.65,15.51 16.45,18.51 20.04,18.51 21.83,15.51"></polygon>
+                                <polygon points="7.55,11.51 9.35,8.51 7.55,5.51 3.96,5.51 2.17,8.51 3.96,11.51"></polygon>
+                                <polygon points="7.55,12.51 3.96,12.51 2.17,15.51 3.96,18.51 7.55,18.51 9.35,15.51"></polygon>
+                                <polygon points="10.21,16 8.41,19 10.21,22 13.79,22 15.59,19 13.79,16"></polygon>
+                            </g>
+                        </g>
+                    </svg></span></a>
+            <div class="bg-white pt-4" style="height: 350px;width: 330px;background: #a0a0a0;border-style: solid;border-radius: 20px;box-shadow: 1px 1px 12px var(--bs-tertiary-color);">
+                <div class="container" style="text-align: center;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="display-6 fs-3 fw-bold mb-0 mt-0" style="color: #000000;">Sign Up</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column justify-content-center align-items-center px-5 py-4 pt-2 mb-0 pb-2">
+                    <div class="row">
+                        <div class="col-md-12 d-xxl-flex flex-column justify-content-xxl-center mb-1"><label class="form-label mb-0" style="color: #000000;font-size: 12px;" for="Email Input">Email</label><input type="text" id="emailInput" style="width: 283px;height: 33px;border-radius: 6px;border: 1px solid rgb(221,221,221);text-align: left;font-size: 14px;" inputmode="email" autocomplete="off"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-xxl-flex flex-column justify-content-xxl-center mb-1"><label class="form-label mb-0" style="color: #000000;font-size: 12px;" for="Email Input">Username</label><input type="text" id="usernameInput" style="width: 283px;height: 33px;border-radius: 6px;border: 1px solid rgb(221,221,221);text-align: left;font-size: 14px;" autocomplete="off"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><label class="form-label mb-0" style="color: #000000;font-size: 12px;" for="Email Input">Password</label><input type="password" id="passwordInput" style="width: 283px;height: 33px;border-radius: 6px;border: 1px solid rgb(221,221,221) ;"></div>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-md-12"><button class="btn btn-primary text-center bg-warning d-flex justify-content-center align-items-center" id="signupButton" type="button" style="height: 33px;text-align: left;width: 283px;border-style: none;border-radius: 6px;">Sign Up</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex flex-row justify-content-center pt-0 mt-3" style="font-size: 12px;">
+                            <p style="color: #000000;">Already have an account?</p><a class="bg-transparent border-0 shadow-none ms-2" href="{{server}}/login" data-bs-theme="light">Log In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-xl-flex justify-content-xl-center d-flex align-items-center justify-content-between flex-column flex-sm-row" style="border-width: 0px;">
+        <div class="d-flex align-items-center gap-3"><span class="color-n-7">© 2024 - Hive</span><span class="color-n-5" data-txt-key="txtFooterRights">All rights reserved<br></span></div>
+        <div class="d-flex align-items-center gap-3"></div>
+    </footer>
+    <script type="module" src="assets/js/signup.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+
+</html>
