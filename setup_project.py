@@ -8,6 +8,7 @@ dname = os.path.dirname(abspath)
 os.chdir(dname + "/encryption")
 
 ipv4 = socket.gethostbyname(socket.gethostname())
+ipv4 = input(f"Ipv4 address (default: {ipv4}): ") or ipv4
 
 json_dump_file = {
     "host": ipv4,
