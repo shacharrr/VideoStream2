@@ -55,6 +55,10 @@ def duplicate_file_to_folder(video_file, folder_name):
     os.system(f'copy {video_file} {folder_name}')
 
 if __name__ == '__main__':
+    if sys.argv[1] == "--help":
+        print("Usage: ffmpeg.py <path_to_video> <movie_name> <review> <genre (,)> <rating>")
+        sys.exit(0)
+        
     video_name, video_review, video_genre ,video_rating = sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
     # con = sqlite3.connect("storage/database.db")
     # cur = con.cursor()
